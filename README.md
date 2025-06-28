@@ -16,15 +16,17 @@
 
 ## 📂 Lab Topics
 
-| Topic | Description | 
+| Topic | Description |
 |-------|-------------|
-| [Retrieving hidden data](./Retrieving-hidden-data/) | Extract hidden content by manipulating WHERE clause logic | 
-| [Subverting application logic](./Subverting-application-logic/) | Bypass business logic (e.g. authentication, logic flow) | 
-|[Retrieving data from other tables](./Retrieving-data-from-other-tables/) | Access sensitive data stored in other tables | 
-| [Examining the database](./Examining-the-database/) | Extract schema or database structure | 
-| [Blind SQL injection](./Blind-SQL-injection/) | Exploit SQLi when no direct data is returned |
-| [Second-order SQL injection](./Second-order-SQL-injection/) | Exploit injected data stored and executed later | 
----
+| [Retrieving hidden data and filter bypass](./Retrieving-hidden-data/) | Extract hidden content by manipulating SQL logic or bypassing input filters |
+| [Authentication and logic bypass](./Authentication-and-logic-bypass/) | Bypass login or application logic using SQL injection |
+| [Database information enumeration](./Database-information-enumeration/) | Discover DBMS type, version, and schema details |
+| [Listing database contents](./Listing-database-contents/) | Enumerate tables, columns, and stored data via SQL injection |
+| [UNION-based SQL injection](./UNION-based-SQL-injection/) | Use `UNION SELECT` to extract data from other tables |
+| [Blind SQL injection](./Blind-SQL-injection/) | Infer data through true/false logic, time delays, or error messages |
+| [Out-of-band SQL injection](./Out-of-band-SQL-injection/) | Use external interactions (e.g., DNS, HTTP) to exfiltrate data |
+
+--
 
 ## 📘 What's Included in Each Lab
 
