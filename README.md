@@ -18,13 +18,12 @@
 
 | Topic | Description | Status |
 |-------|-------------|--------|
-| [Retrieving hidden data](./Retrieving-hidden-data/) | Extract hidden content by manipulating WHERE clause logic | ✅ Completed |
-| [Subverting application logic](./Subverting-application-logic/) | Bypass business logic (e.g. authentication, logic flow) | 🔜 In Progress |
-| [Retrieving data from other tables](./Retrieving-data-from-other-tables/) | Access sensitive data stored in other tables | 🔜 In Progress |
-| [Examining the database](./Examining-the-database/) | Extract schema or database structure | 🔜 In Progress |
-| [Blind SQL injection](./Blind-SQL-injection/) | Exploit SQLi when no direct data is returned | 🔜 In Progress |
-| [Second-order SQL injection](./Second-order-SQL-injection/) | Exploit injected data stored and executed later | 🔜 In Progress |
-
+| [Retrieving hidden data](./Retrieving-hidden-data/) | Extract hidden content by manipulating WHERE clause logic | 
+| [Subverting application logic](./Subverting-application-logic/) | Bypass business logic (e.g. authentication, logic flow) | 
+|[Retrieving data from other tables](./Retrieving-data-from-other-tables/) | Access sensitive data stored in other tables | 
+| [Examining the database](./Examining-the-database/) | Extract schema or database structure | 
+| [Blind SQL injection](./Blind-SQL-injection/) | Exploit SQLi when no direct data is returned |
+| [Second-order SQL injection](./Second-order-SQL-injection/) | Exploit injected data stored and executed later | 
 ---
 
 ## 📘 What's Included in Each Lab
