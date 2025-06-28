@@ -16,8 +16,8 @@
 
 ## 📂 Lab Topics
 
-| Topic | Description | Status |
-|-------|-------------|--------|
+| Topic | Description | 
+|-------|-------------|
 | [Retrieving hidden data](./Retrieving-hidden-data/) | Extract hidden content by manipulating WHERE clause logic | 
 | [Subverting application logic](./Subverting-application-logic/) | Bypass business logic (e.g. authentication, logic flow) | 
 |[Retrieving data from other tables](./Retrieving-data-from-other-tables/) | Access sensitive data stored in other tables | 
