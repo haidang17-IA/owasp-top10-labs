@@ -1,65 +1,96 @@
-# 💉 PortSwigger Academy – Injection Labs (OWASP Top 10)
+# OWASP Top 10 Labs & Knowledge Summary
 
-> A personal knowledge base and lab documentation project focusing on the **Injection** vulnerability from the [OWASP Top 10](https://owasp.org/www-project-top-ten/), with hands-on labs from [PortSwigger Web Security Academy](https://portswigger.net/web-security/sql-injection).  
-> This repository includes theoretical explanations, lab walkthroughs, payloads used, screenshots, and personal insights.
-
----
-
-## 🎯 Objectives
-
-- ✅ Understand how different types of **SQL Injection** attacks work
-- ✅ Practice exploiting real-world-like scenarios via PortSwigger Labs
-- ✅ Record step-by-step solutions with payloads and responses
-- ✅ Organize knowledge by attack technique/topic
+This repository is a personal knowledge base and lab documentation for understanding and practicing the OWASP Top 10 web application security risks.  
+Each section includes:
+-  Summary of theory
+-  Step-by-step lab walkthroughs (e.g., PortSwigger Academy, DVWA)
+-  Exploitation techniques and mitigation
+-  Timeline of progress
 
 ---
 
-## 📂 Lab Topics
+## 📅 Timeline of Lab Progress
 
-| Topic | Description |
-|-------|-------------|
-| [Retrieving hidden data and filter bypass](./Retrieving-hidden-data/) | Extract hidden content by manipulating SQL logic or bypassing input filters |
-| [Authentication and logic bypass](./Authentication-and-logic-bypass/) | Bypass login or application logic using SQL injection |
-| [Database information enumeration](./Database-information-enumeration/) | Discover DBMS type, version, and schema details |
-| [Listing database contents](./Listing-database-contents/) | Enumerate tables, columns, and stored data via SQL injection |
-| [UNION-based SQL injection](./UNION-based-SQL-injection/) | Use `UNION SELECT` to extract data from other tables |
-| [Blind SQL injection](./Blind-SQL-injection/) | Infer data through true/false logic, time delays, or error messages |
-| [Out-of-band SQL injection](./Out-of-band-SQL-injection/) | Use external interactions (e.g., DNS, HTTP) to exfiltrate data |
-
---
-
-## 📘 What's Included in Each Lab
-
-- 🔍 Lab title & description
-- 🔗 Link to the live lab (PortSwigger)
-- 📌 Payloads used
-- 🧠 Explanation of how the exploit works
-- 📸 Screenshots showing success
-- ✅ Key takeaways and personal notes
+| Topic | Completion Date |
+|-------|-----------------|
+|  Injection | Jun 28, 2025 |
+|  Broken Authentication | Jul 5, 2025 |
+|  Sensitive Data Exposure | Upcoming |
+|  XML External Entities (XXE) | Jul 12, 2025 |
+|  Broken Access Control | Upcoming |
+|  Security Misconfiguration | Upcoming |
+|  Cross-Site Scripting (XSS) | Upcoming |
+|  Insecure Deserialization | Upcoming |
+|  Using Components with Known Vulnerabilities | Upcoming |
+|  Insufficient Logging and Monitoring | Upcoming |
 
 ---
 
-## 🧠 What is SQL Injection?
+##  Topics Covered
 
-**SQL Injection** is a vulnerability that occurs when an application incorporates unsanitized user input directly into SQL queries. This can allow attackers to **read, modify, or delete data** from the backend database.
+### 1. **Injection**
+- SQL Injection (Retrieving hidden data, UNION attacks, Blind SQLi)
+- Command Injection
+- Second-order Injection  
 
-> Example basic payload: `' OR 1=1--`  
-> This forces the query to always return true, revealing hidden data or bypassing login systems.
+### 2. **Broken Authentication**
+- Credential Stuffing
+- Brute-force login
+- Session token issues
+- Bypassing 2FA  
+
+### 3. **Sensitive Data Exposure** *(aka Cryptographic Failures)*
+- Insecure TLS/SSL
+- Data leakage in transit or at rest
+
+### 4. **XML External Entities (XXE)**
+- External entity injection
+- File disclosure, SSRF via XML payload
+
+### 5. **Broken Access Control**
+- IDOR
+- Forced browsing
+- Privilege escalation
+
+### 6. **Security Misconfiguration**
+- Exposed admin panels
+- Misconfigured headers
+- Directory listing
+
+### 7. **Cross-Site Scripting (XSS)**
+- Reflected, Stored, DOM-based XSS
+- Context-aware escaping and CSP
+
+### 8. **Insecure Deserialization**
+- Remote code execution via object injection
+
+### 9. **Using Components with Known Vulnerabilities**
+- Dependency scanning
+- Exploiting outdated libraries
+
+### 10. **Insufficient Logging and Monitoring**
+- Missed detection of attacks
+- Lack of alerting and audit trails
 
 ---
 
-## 📚 References
+##  Tools Used
 
-- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
-- [OWASP SQL Injection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
-- [OWASP Top 10 – Injection](https://owasp.org/Top10/A03_2021-Injection/)
+- Kali Linux
+- Burp Suite (Community & Pro)
+- DVWA: [github.com/digininja/DVWA](https://github.com/digininja/DVWA)
+- PortSwigger Web Security Academy
+
+---
+
+##  Notes
+
+- Each folder in this repository corresponds to one OWASP risk category.
+- Payloads, writeups, screenshots, and mitigation tips included.
 
 ---
 
-## 📜 License
 
-This repository is created for **educational and ethical purposes only**. Content and lab challenges belong to PortSwigger. Please do not use this knowledge to perform unauthorized testing.
 
----
 
 
